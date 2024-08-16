@@ -1,0 +1,525 @@
+/* Universal styles */
+
+html {
+    font-family: "Ubuntu", san-serif;
+    margin: 0;
+    text-align: center;
+    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    margin-top: 0%;
+    width: 100%;
+    height: 450px;
+    margin: auto;
+}
+
+
+/* Navigation bar styling */
+
+nav {   
+    border-bottom: rgb(182, 187, 182);
+}
+
+nav a:hover {
+    background-color: salmon;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 175%;
+    transition-delay:0.2s;
+    border-radius: 3px;
+    font-weight: 500;
+    margin: 100px auto;
+  
+  }
+
+a {
+    text-decoration: none;
+    font-family: "Amatic SC", sans-serif;
+    transition-duration: 0.75s;
+    padding: 3px 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+  }
+  
+
+  nav li {
+    display: inline;
+    text-align: right;
+    padding-left: 10px;
+}
+
+
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-evenly;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 0;
+}
+
+ nav .links {
+    display: flex;
+    float: right;
+    margin-left: 150px;
+}
+
+nav .links li {
+    padding-left: 50px;
+}
+
+/* Logo */
+
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20%;
+    overflow: hidden;
+    background-size: contain;
+    
+}
+
+.logo img {
+   max-width: 100%;
+   display: block;
+   height: auto;
+
+}
+
+.banner {
+    height: 80vh;
+    display: flex;
+    align-items: baseline;
+}
+
+/* Title banner style */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    min-height: 175px;
+}
+
+
+
+.title h1 {
+    font-family: "Amatic SC", sans-serif;
+    flex-shrink: 1;
+    font-size: 60px;
+    color: burlywood;
+    text-decoration: double;
+    text-align: center;
+}
+
+.title h2 {
+    font-family: "Amatic SC", sans-serif;
+    flex-shrink: 1;
+    font-size: 50px;
+    color: black;
+    text-decoration: double;
+    text-align: center;
+}
+
+.title-main {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    min-height: 175px;
+}
+
+
+.title-main h1 {
+    font-family: "Amatic SC", sans-serif;
+    flex-shrink: 1;
+    font-size: 60px;
+    color: burlywood;
+    text-decoration: double;
+    text-align: center;
+}
+
+.title-main h2 {
+    font-family: "Amatic SC", sans-serif;
+    flex-shrink: 1;
+    font-size: 50px;
+    color: black;
+    text-decoration: double;
+    text-align: center;
+}
+
+/* Main CTA/Banner styling */
+
+.story-cover {
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/barbershop2.jpg');
+    background-size: cover;
+    background-repeat:repeat;
+    
+}
+
+.story-cover .story {
+    justify-content: center;
+    align-items: center;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.95;
+    width: 1000px;
+    height: 450px;
+    background: burlywood;
+    margin: auto auto;
+    color: rgb(46, 46, 46);
+    text-align: center;
+    flex-shrink: 1;
+    line-height: 1.4;
+    font-family: "Ubuntu", sans-serif;
+    border-radius: 1.5px;
+    font-size: 17px;
+    min-height: 400px;
+}
+
+.story p {
+    margin: auto 25px;
+    flex-shrink: 1;
+}
+
+/* Services Banner Container */
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 50, 50, 0.277);
+}
+
+.services {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Space between items */
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Properly space items */
+    width: 100%; /* Ensure each container takes full width of its parent */
+    max-width: 800px; /* Adjust based on your layout needs */
+    margin: 20px; /* Add space between containers */
+    box-sizing: border-box; /* Include padding and border in width/height */
+
+}
+
+.services img {
+    width: 50%; /* Make image responsive */
+    height: 300px; /* Maintain aspect ratio */
+    max-width: 500px; /* Ensure it doesn't exceed the container width */
+    object-fit: cover; /* Ensure image fits within the container */
+    margin: 20px 0; /* Center the image vertically */
+    margin-right: 20px;
+    border: 2px solid darksalmon;
+    border-radius: 2px;
+}
+
+.service-container span {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bolder;
+    color: firebrick;
+    font-size: 50px;
+    letter-spacing:0.3ch;
+    margin: 10px 0; /* Add consistent margin */
+    flex: 1;
+}
+
+/* Team container styling */
+
+.team {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+
+.employee {
+    width: 450px;
+    display: flex;
+    margin: 20px 0; /* Center the image vertically */
+    margin-right: 20px;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    color: rgb(253, 253, 253);
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: "Urbanist", sans-serif;
+}
+
+#smaller-text{
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px ;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+
+.team img {
+    width: 50%; /* Make image responsive */
+    height: 300px; /* Maintain aspect ratio */
+    max-width: 500px; /* Ensure it doesn't exceed the container width */
+    object-fit: cover; /* Ensure image fits within the container */
+    margin: 20px 0; /* Center the image vertically */
+    margin-right: 20px;
+    border: 3px solid slategrey;
+    border-radius: 2px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Amatic SC", sans-serif;
+    font-size: larger;
+    color: black;
+    line-height: 1.5;
+    height: 500px;
+    background-color: rgba(255, 160, 122, 0.505);
+}
+
+/* Styles for Medium to small screens */
+@media only screen and (max-width: 760px) {
+
+.story-cover .desktop {
+    display: hidden;
+}
+
+nav {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav .links {
+    margin-left: 75px;
+}
+
+nav .links li {
+    padding-left: 10px;
+}
+
+a {
+    font-size: 20px;
+ }
+
+.logo img {
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* Prevents the image from exceeding the container */
+        max-height: 100%; /* Prevents the image from exceeding the container's height */
+    }
+ }
+
+ #desktop {
+    display: none;
+ }
+
+nav li {
+    padding-left: 2px;
+}
+
+.banner {
+    height: 60vh;
+    margin: 10px;
+}
+
+.banner img {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.services .service-container {
+    display: flex;
+    min-width: 200px; /* Reduce this value to fit the screen */
+    flex-basis: 40%; /* Adjust based on how many items per row you want */
+        flex-direction: column; /* Stack content vertically */
+        margin-bottom: 20px; /* Add space between containers */
+}
+
+.service-container img {
+    width: 100%;
+}
+
+.service-container span {
+    font-size: 20px;
+}
+
+.title {
+    display: flex;
+    flex-shrink: 2;
+}
+
+.title.main {
+    display: flex;
+    flex-shrink: 2;
+}
+
+.team .employee{
+    margin-left: 10px;
+}
+.team img{
+    width: 175px;
+    height: 150px;
+}
+
+.team .employee {
+    display: flex;
+    flex-shrink: 2;
+    flex-direction: column;
+    flex: 1;
+    font-size: 20px;
+    align-items: center;
+
+}
+
+.employee #smaller-text {
+    font-size: 15px;
+}
+
+.team img {
+    background-size: contain;
+    width: 100%;
+}
+
+.story-cover {
+    flex-shrink: 1;
+    font-size: larger;
+}
+
+.title {
+   
+    display: flex;
+    flex-shrink: 1;
+}
+
+.title h2 {
+    font-size: 35px;
+    flex-shrink: 2;
+}
+
+
+.team {
+    height: 500px;
+    margin-top: 125px;
+}
+/* Styling for small screens */
+@media only screen and (max-width: 520px) {
+
+ .logo {
+    background-size: cover;
+}
+    
+.logo img {
+    min-width: 100%;
+    min-height: 30px;
+    margin-right: 20px;
+}
+
+nav .links {
+    margin-left: 50px;
+}
+
+nav {
+    justify-items: normal;
+}
+
+ a {
+    font-size: 15px;
+ }
+ 
+ nav li {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+ }
+
+ nav a {
+    padding-left: 0;
+ }
+
+.title-main {
+    min-height: 225px;
+}
+
+.story-cover {
+    min-height: 600px;
+}
+    .services {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    
+.service-container {
+    min-width: 80%;
+}
+ 
+    
+    .service-container img {
+        min-width: 300px;
+    }
+    
+    .employee span {
+        font-size: 15px;
+    }
+
+    .service-container span {
+        font-size: 30px;
+    }
+
+    .story-cover .desktop p {
+        display: hidden;
+    }
+
+}
+}
